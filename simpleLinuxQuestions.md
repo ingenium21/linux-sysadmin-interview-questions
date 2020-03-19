@@ -36,10 +36,11 @@ Simple Linux Questions
 * Walk me through the steps you'd take to troubleshoot a 404 error on a web application you administer.
 * What is ICMP protocol? Why do you need to use?
 
-#### [[⬆]](#slq) <a name='Administrator'>What is the name and the UID of the administrator user:</a>
+
+## [[⬆]](#slq) <a name='Administrator'>What is the name and the UID of the administrator user:</a>
 The Adminstrator user, most of the time known as ```root``` is given the UID of 0
 
-#### [[⬆]](#slq) <a name='listAllFiles'>How to list all files, including hidden ones, in a directory:</a>
+## [[⬆]](#slq) <a name='listAllFiles'>How to list all files, including hidden ones, in a directory:</a>
 ```ls -a``` to show all files, including hidden ones
 
 Explanation:
