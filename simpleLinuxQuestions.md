@@ -5,8 +5,8 @@ Simple Linux Questions
 ## <a name='slq'>Simple Linux questions</a>
 1. [What is the name and the UID of the administrator user?](#Administrator)
 1. [How to list all files, including hidden ones, in a directory?](#listAllFiles)
-1. [What is the Unix/Linux command to remove a directory and its contents?]()
-* Which command will show you free/used memory? Does free memory exist on Linux?
+1. [What is the Unix/Linux command to remove a directory and its contents?](#removeDirectory)
+1. [Which command will show you free/used memory? Does free memory exist on Linux?]()
 * How to search for the string "my konfu is the best" in files of a directory recursively?
 * How to connect to a remote server or what is SSH?
 * How to get all environment variables and how can you use them?
@@ -37,10 +37,10 @@ Simple Linux Questions
 * What is ICMP protocol? Why do you need to use?
 
 
-## [[⬆]](#slq) <a name='Administrator'>What is the name and the UID of the administrator user:</a>
-The Adminstrator user, most of the time known as ```root``` is given the UID of 0
+#### [[⬆]](#slq) <a name='Administrator'>What is the name and the UID of the administrator user:</a>
+The Adminstrator user, most of the time known as ```root``` is given the UID of 0 by code in the kernel
 
-## [[⬆]](#slq) <a name='listAllFiles'>How to list all files, including hidden ones, in a directory:</a>
+#### [[⬆]](#slq) <a name='listAllFiles'>How to list all files, including hidden ones, in a directory:</a>
 ```ls -a``` to show all files, including hidden ones
 
 Explanation:
@@ -49,4 +49,19 @@ ls == list directory contents
 
 -a, or --all == do not ignore entries starting with .
 ```
+
+#### [[⬆]](#slq) <a name='removeDirectory'>What is the Unix/Linux command to remove a directory and its contents?:</a>
+```rm -rf DIRNAME```
+
+Explanation:
+```
+rm == remove command
+
+-r == recurse through the dir
+-f == force, this will mean that the OS will NOT ask you to confirm so be careful
+```
+
+#### [[⬆]](#slq) <a name='Which command will show you free/used memory? Does free memory exist on Linux?:</a>
+```free``` for your standard and barebones display
+if you have it installed, ```top``` gives a good rundown of CPU, Memory, PIDs, and more. ```htop``` does a similar job but a slightly more pleasing UI
 
