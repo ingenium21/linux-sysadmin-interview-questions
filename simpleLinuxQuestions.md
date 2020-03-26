@@ -6,9 +6,9 @@ Simple Linux Questions
 1. [What is the name and the UID of the administrator user?](#Administrator)
 1. [How to list all files, including hidden ones, in a directory?](#listAllFiles)
 1. [What is the Unix/Linux command to remove a directory and its contents?](#removeDirectory)
-1. [Which command will show you free/used memory? Does free memory exist on Linux?]()
-* How to search for the string "my konfu is the best" in files of a directory recursively?
-* How to connect to a remote server or what is SSH?
+1. [Which command will show you free/used memory? Does free memory exist on Linux?](Memory)
+1. [How to search for the string "my konfu is the best" in files of a directory recursively?](konfu)
+1. [How to connect to a remote server or what is SSH?](SSH)
 * How to get all environment variables and how can you use them?
 * I get "command not found" when I run ```ifconfig -a```. What can be wrong?
 * What happens if I type TAB-TAB?
@@ -61,7 +61,17 @@ rm == remove command
 -f == force, this will mean that the OS will NOT ask you to confirm so be careful
 ```
 
-#### [[⬆]](#slq) <a name='Which command will show you free/used memory? Does free memory exist on Linux?:</a>
+#### [[⬆]](#slq) <a name='Memory'>Which command will show you free/used memory? Does free memory exist on Linux?:</a>
 ```free``` for your standard and barebones display
 if you have it installed, ```top``` gives a good rundown of CPU, Memory, PIDs, and more. ```htop``` does a similar job but a slightly more pleasing UI
 
+#### [[⬆]](#slq) <a name='konfu'>#### [[⬆]](#slq) <a name='konfu'>How to search for the string "my konfu is the best" in files of a directory recursively?:</a>
+```grep -R "my konfu is the best" ./directory/```
+
+or 
+
+*while inside the directory*: 
+```ls | grep -R "my konfu is the best" ```
+
+#### [[⬆]](#slq) <a name='SSH'>#### [[⬆]](#slq) <a name='SSH'>How to connect to a remote server or what is SSH?:</a>
+```SSH username@{{serverName or IP of the server}}```
